@@ -15,7 +15,7 @@ namespace AttendenceSystem
         public DbSet<Student> Students { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<AttendenceSheet> AttenantsSheets { get; set; }
+        public DbSet<AttendanceSheet> AttenantsSheets { get; set; }
 
         public DataBaseContext()
         {

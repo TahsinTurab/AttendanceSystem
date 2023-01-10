@@ -746,8 +746,8 @@ while (exit==0)
                             Console.WriteLine($"____{stuName}'s Attendence Report____");
                             Console.WriteLine("");
                            
-                            List<AttendenceSheet> attendenceList = context.AttenantsSheets.Where(x => x.CourseName == courseName).ToList();
-                            List<AttendenceSheet> attendenceSheet1 = context.AttenantsSheets.Where(x => x.CourseName == courseName && x.StudentName == stuName).ToList();
+                            List<AttendanceSheet> attendenceList = context.AttenantsSheets.Where(x => x.CourseName == courseName).ToList();
+                            List<AttendanceSheet> attendenceSheet1 = context.AttenantsSheets.Where(x => x.CourseName == courseName && x.StudentName == stuName).ToList();
                             int j = 0;
                             string previous = "";
                             for (int i = 0; i < attendenceList.Count; i++)
@@ -802,8 +802,8 @@ while (exit==0)
                             Console.WriteLine("");
                             Console.WriteLine($"Course Name : {courseName}");
                             Console.WriteLine("");
-                            List<AttendenceSheet> attendenceList = context.AttenantsSheets.Where(x => x.CourseName == courseName).ToList();
-                            List<AttendenceSheet> attendenceSheet1 = context.AttenantsSheets.Where(x => x.CourseName == courseName && x.StudentName == stuName).ToList();
+                            List<AttendanceSheet> attendenceList = context.AttenantsSheets.Where(x => x.CourseName == courseName).ToList();
+                            List<AttendanceSheet> attendenceSheet1 = context.AttenantsSheets.Where(x => x.CourseName == courseName && x.StudentName == stuName).ToList();
                             int j = 0;
                             string previous = "";
                             for (int i = 0; i < attendenceList.Count; i++)
@@ -915,7 +915,7 @@ while (exit==0)
             }
             else
             {
-                AttendenceSheet attendenceCount = new AttendenceSheet();
+                AttendanceSheet attendenceCount = new AttendanceSheet();
                 DateTime now = DateTime.Now;
                 string day = now.DayOfWeek.ToString();
                 string time = now.ToString("t");
@@ -951,7 +951,7 @@ while (exit==0)
                 //Console.WriteLine(onTime);
                 if (onTime == 1 && findDay == 1)
                 {
-                    AttendenceSheet newAttendence = new AttendenceSheet();
+                    AttendanceSheet newAttendence = new AttendanceSheet();
                     newAttendence.StudentId = studentId;
                     newAttendence.CourseId = courseId;
                     newAttendence.CourseName = courseName;

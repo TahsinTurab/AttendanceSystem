@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AttendenceSystem
 {
-    public class AttendenceSheet
+    public class AttendanceSheet
     {
         public int Id { get; set; }
         public int StudentId { get; set; }

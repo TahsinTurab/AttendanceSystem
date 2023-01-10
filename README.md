@@ -17,7 +17,6 @@ Features:
       4. Admin can set class schedule for a course
         Class schedule consists of day and time and total number of classes.
         For example, Sunday 8PM - 10PM, Monday 7PM - 9PM, 20 Classes.
-              
       5. Students can login and give attendance in the course he/she is enrolled in.
       6. Students can’t give attendance outside of date & class time.
       7. Teachers can check attendance reports of any course
